@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+h1.titulo{
+    text-align: center;
+}
+
+div.content{
+    width: 650px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    background: #dad9dd;
+    padding: 100px;
+}
