@@ -6,20 +6,19 @@
         <title>To-do List</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./src/css/index.css">
-        <script src="main.js"></script>
+        <script src="./src/scripts/script.js"></script>
     </head>
-    <body> 
+    <body onload="mueveReloj()"> 
         <header>
             <h1 class="titulo">To-do list</h1>
         </header>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Natus sint tempore aperiam veniam atque minima autem harum libero 
-                voluptatibus qui dolores unde eveniet tenetur quis nihil cum, nostrum 
-                quia temporibus!</p>
+            <div id="fecha"></div>
+            <p>¿Quieres agregar una nueva tarea?</p>
             <input type="text" name="tarea" placeholder="Nueva tarea" class="input1">
             <button class="add">+</button>
             <img src="./src/img/ico2.png" alt="cup" class="cup">
+            <p>Tiempo de relajarse! no hay cosas por hacer.</p>
         </div>
         <p>     .</p>
     </body>

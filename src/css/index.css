@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: linear-gradient(salmon, pink);
+    background-image: linear-gradient(rgb(114, 250, 232), rgb(28, 32, 228));
     height: 80%;
 }
 
@@ -26,8 +26,12 @@ h1.titulo{
     padding: 1rem;
 }
 
+#fecha{
+    font-size: 30px;
+}
+
 div.content{
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
     border: 1px solid #000;
     background: #e4e3e7;
