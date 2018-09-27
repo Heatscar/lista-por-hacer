@@ -8,5 +8,4 @@ function mueveReloj(){
     NumeroDeMes=LaFecha.getMonth();
     FechaCompleta=diasem[diasemana]+" "+LaFecha.getDate()+" de "+Mes[NumeroDeMes]+" de "+LaFecha.getFullYear()+" ";
     document.getElementById('fecha').innerHTML=FechaCompleta;
-    setTimeout('mueveReloj()',1000)
 } 
