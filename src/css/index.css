@@ -6,7 +6,7 @@
 
 body{
     background-image: linear-gradient(rgb(114, 250, 232), rgb(28, 32, 228));
-    height: 100vh;
+    height: 105vh;
 }
 
 h1.titulo{
@@ -14,14 +14,20 @@ h1.titulo{
     font-size: 3rem;
 }
 
-.input1{
-    width: 40%;
+#myInput{
+    width: 50%;
     height: 2rem;
     text-align: center;
 }
-.add{
+.addBtn{
     width: 20%;
     height: 2rem;
+}
+#myUL li{
+    margin-top: 5px;
+    background-color: gray;
+    border: 1px solid;
+    list-style: none;
 }
 .cup{
     width: 40%;
@@ -38,11 +44,15 @@ p.question{
 }
 
 div.content{
-    width: 50%;
-    height: 80vh;
+    width: 45%;
     margin: 0 auto;
     border: 1px solid #000;
     background: #e4e3e7;
     text-align: center;
-    padding: 100px;
+    padding: 80px;
+    border-radius: 10%;
+}
+
+#eliminar-tareas{
+    margin: 5px;
 }

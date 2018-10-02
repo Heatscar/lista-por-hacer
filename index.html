@@ -6,7 +6,6 @@
         <title>To-do List</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./src/css/index.css">
-        <script src="./src/scripts/script.js"></script>
     </head>
     <body onload="mueveReloj()"> 
         <header>
@@ -16,11 +15,16 @@
             <div id="fecha"></div>
             <p class="question">¿Quieres agregar una nueva tarea?</p>
             <form>
-                <input type="text" name="tarea" placeholder="Nueva tarea" class="input1" required>
-                <button class="add">+</button>
+                <input type="text" id="myInput" placeholder="Nueva tarea" required>
+                <button onclick="newElement()" onclick="erase()" class="addBtn" id="eliminar">+</button>
             </form>
-            <img src="./src/img/ico2.png" alt="cup" class="cup">
-            <p>Tiempo de relajarse! no hay cosas por hacer.</p>
+            <ul id="myUL"> </ul>
+            <div id="contenedor">
+                <img src="./src/img/ico2.png" alt="cup" class="cup">
+                <p>Tiempo de relajarse! no hay cosas por hacer.</p>
+            </div>
+            <button onclick="erase()" id="eliminar-tareas" >Eliminar Todas</button> 
         </div>
+        <script src="./src/scripts/script.js"></script>
     </body>
 </html>
