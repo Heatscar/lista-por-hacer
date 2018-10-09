@@ -1,11 +1,13 @@
-var boton = document.getElementById("eliminar");
-    boton.addEventListener("click", function() {
-    document.getElementById("contenedor").innerHTML = ""; 
-    },false)
-var boton = document.getElementById("eliminar-tareas");
-    boton.addEventListener("click", function() {
-    document.getElementById("myUL").innerHTML = ""; 
-    },false)  
+//Eliminar uno    
+ var boton = document.getElementById("eliminar");
+     boton.addEventListener("click", function() {
+     document.getElementById("contenedor").innerHTML = ""; 
+     },false)
+//Eliminar Todo     
+ var boton = document.getElementById("eliminar-tareas");
+     boton.addEventListener("click", function() {
+     document.getElementById("myUL").innerHTML = ""; 
+     },false) 
 
 function mueveReloj(){
     var LaFecha=new Date();
@@ -17,7 +19,8 @@ function mueveReloj(){
     NumeroDeMes=LaFecha.getMonth();
     FechaCompleta=diasem[diasemana]+" "+LaFecha.getDate()+" de "+Mes[NumeroDeMes]+" de "+LaFecha.getFullYear()+" ";
     document.getElementById('fecha').innerHTML=FechaCompleta;
-} 
+}
+
 function newElement() {
     var li = document.createElement("li");
     var inputValue = document.getElementById("myInput").value;
@@ -29,4 +32,14 @@ function newElement() {
         document.getElementById("myUL").appendChild(li);
       }
       document.getElementById("myInput").value = "";
+
+      //Método para contar tareas
+    var value = parseInt(document.getElementById('resultado').value,0);
+    value = isNaN(value) ? 0 : value;
+    if(value >= 100) {
+        value = 100;
+    }else{
+        value++;
+    }
+    document.getElementById('resultado').value = value;
 }

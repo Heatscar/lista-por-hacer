@@ -16,15 +16,20 @@
             <p class="question">¿Quieres agregar una nueva tarea?</p>
             <form>
                 <input type="text" id="myInput" placeholder="Nueva tarea" required>
-                <button onclick="newElement()" onclick="erase()" class="addBtn" id="eliminar">+</button>
+                <button id="eliminar" onclick="newElement();return false;">+</button>
             </form>
+
+            <p>Tienes <input name="resultado" id="resultado" value="0"> cosas por hacer.</p>
+
             <ul id="myUL"> </ul>
             <div id="contenedor">
                 <img src="./src/img/ico2.png" alt="cup" class="cup">
                 <p>Tiempo de relajarse! no hay cosas por hacer.</p>
             </div>
-            <button onclick="erase()" id="eliminar-tareas" >Eliminar Todas</button> 
+            <button id="eliminar-tareas" >Eliminar Todas</button> 
         </div>
         <script src="./src/scripts/script.js"></script>
     </body>
 </html>
+
+

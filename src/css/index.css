@@ -5,8 +5,11 @@
 }
 
 body{
-    background-image: linear-gradient(rgb(114, 250, 232), rgb(28, 32, 228));
-    height: 105vh;
+    /* background-image: url("../img/back1.jpeg") linear-gradient(rgb(114, 250, 232), rgb(28, 32, 228)); */
+    background-image: url("../img/back1.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
 }
 
 h1.titulo{
@@ -19,16 +22,36 @@ h1.titulo{
     height: 2rem;
     text-align: center;
 }
-.addBtn{
+#eliminar{
     width: 20%;
     height: 2rem;
 }
+#resultado{
+    text-align: center; 
+    width: 50px;
+    background: transparent;
+    border: transparent;
+}
+
 #myUL li{
     margin-top: 5px;
     background-color: gray;
     border: 1px solid;
     list-style: none;
 }
+
+#eliminar-tareas{
+    border: transparent;
+    width: 45%;
+    background: rgb(21, 208, 214);
+    font-size: 1rem;
+    text-align: center;
+    background: transparent;
+}
+#eliminar-tareas:hover{
+    text-decoration: underline;
+}
+
 .cup{
     width: 40%;
     padding: 1rem;
@@ -36,18 +59,19 @@ h1.titulo{
 
 #fecha{
     font-size: 3rem;
-    color: salmon;
+    color: rgb(7, 126, 120);
 }
 
 p.question{
     font-size: 2rem;
+    color: darkolivegreen;
 }
 
 div.content{
     width: 45%;
     margin: 0 auto;
     border: 1px solid #000;
-    background: #e4e3e7;
+    background: #47e0d96e;
     text-align: center;
     padding: 80px;
     border-radius: 10%;
