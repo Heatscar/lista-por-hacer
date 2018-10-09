@@ -27,6 +27,7 @@ h1.titulo{
     height: 2rem;
 }
 #resultado{
+    color: #000;
     text-align: center; 
     width: 50px;
     background: transparent;
